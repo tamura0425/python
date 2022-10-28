@@ -2,8 +2,9 @@ import openpyxl
 import logging
 import csv
 import pprint
+
 from openpyxl import load_workbook
-from openpyxl import Workbook 
+from openpyxl import Workbook
 import glob
 
 
@@ -18,8 +19,6 @@ def create_books():
     # 保存する
     wb.save('C:\\Users\\tamur\\Desktop\\lottery_notes\\test2.xlsx')
     glob.glob("*.xlsx")
-    
-    
 
 def create_book():
     wb = Workbook()
@@ -50,9 +49,6 @@ def create_log():
     logging.basicConfig()
     logger = logging.getLogger(__name__)
     logger.error("エラーが発生しました")
-
-
-
 
 
 create_log()
