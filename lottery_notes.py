@@ -86,5 +86,3 @@ rotteryData.scraping()
 
 rotteryData.hello()
 
-rotteryData.hello()
-rotteryData.hello()
