@@ -9,8 +9,6 @@ import glob
 import requests
 from bs4 import BeautifulSoup
 
-
-
 class LotteryDataAcquisition:
 # """A simple example class"""         # 三重クォートによるコメント
 
@@ -85,4 +83,7 @@ rotteryData.hello()
 rotteryData.scraping()
 
 rotteryData.hello()
+
+
+
 
