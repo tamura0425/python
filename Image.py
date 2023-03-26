@@ -3,10 +3,10 @@ import os
 import logging
 
 # まとめたい jpg ファイルが入っているフォルダを指定します
-input_folder = r"O:\プログラミング資料テキスト\片側"
+input_folder = r"xx:/xxx/xxx"
 
 # 出力する pdf ファイルの名前を指定します
-output_file = r"C:\Users\tamur\Desktop\123\output_file.pdf"
+output_file = r"xx:/xxx/xxx\output_file.pdf"
 
 # 1ページあたりの解像度を指定します（デフォルトは 72dpi）
 dpi = 300
