@@ -17,6 +17,7 @@ logging.basicConfig(filename='example.log', level=logging.ERROR)
 # jpg ファイルを読み込み、PDF ファイルに変換します
 def convert_to_pdf(input_folder, output_file, dpi):
     try:
+<<<<<<< HEAD
        	mages = []
        	for filename in sorted(os.:%dlistdir(input_folder)):
             if filename.endswith(".JPG"):
@@ -31,5 +32,23 @@ try:
                                                                                                 convert_to_pdf(input_folder, output_file, dpi)
             except Exception as e:
             print(e)logging.error(e)
+=======
+        images = []
+        for filename in sorted(os.listdir(input_folder)):
+            if filename.endswith(".JPG"):
+                filepath = os.path.join(input_folder, filename)
+                img = Image.open(filepath)
+                images.append(img)
+>>>>>>> 6596ddc9f6bd993ed0cfd659a820de17f5aabf52
 
+        # 画像をPDFにまとめます
+        if images:
+            images[0].save(output_file, save_all=True, append_images=images[1:], dpi=(dpi,dpi))
+    except Exception as e:
+        logging.error(e)
 
+try:
+    convert_to_pdf(input_folder, output_file, dpi)
+except Exception as e:
+    print(e)
+    logging.error(e)
